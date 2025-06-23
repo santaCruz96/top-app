@@ -1,13 +1,13 @@
 :root {
-    --background: #ffffff;
-    --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-    :root {
-        --background: #0a0a0a;
-        --foreground: #ededed;
-    }
+    --black: #3b434e;
+    --gray-light: #ebebeb;
+    --white: white;
+    --primary: #7653fc;
+    --primary-hover: #6344df;
+    --red: #fc836d;
+    --green: #1dc37e;
+    --green-light: #c8f8e4;
+    --font-family: "Noto Sans KR", sans-serif;
 }
 
 html,
@@ -17,9 +17,9 @@ body {
 }
 
 body {
-    color: var(--foreground);
-    background: var(--background);
-    font-family: Arial, Helvetica, sans-serif;
+    color: var(--black);
+    background: #f5f6f8;
+    font-family: var(--font-family);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
