@@ -13,19 +13,12 @@ export const Button = ({
 }: ButtonProps): JSX.Element => {
     return (
         <button
-            className={cn(styles.button, className, {
-                [styles.primary]: appearance === "primary",
-                [styles.ghost]: appearance === "ghost",
-            })}
+            className={cn(styles.button, className, styles[appearance])}
             {...props}
         >
             {children}
             {arrow !== "none" && (
-                <ArrowIcon
-                    className={cn(styles.arrow, {
-                        [styles.down]: arrow === "down",
-                    })}
-                />
+                <ArrowIcon className={cn(styles.arrow, styles[arrow])} />
             )}
         </button>
     );
