@@ -17,7 +17,7 @@ const eslintConfig = [
             semi: ["error", "always"],
             "@typescript-eslint/no-explicit-any": "warn",
             "@typescript-eslint/no-empty-interface": "warn",
-            "no-page-custom-font": false,
+            // "no-page-custom-font": false,
         },
     },
     eslintConfigPrettier,
