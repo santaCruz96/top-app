@@ -18,6 +18,12 @@ const eslintConfig = [
             "@typescript-eslint/no-explicit-any": "warn",
             "@typescript-eslint/no-empty-interface": "warn",
             // "no-page-custom-font": false,
+            "react-hooks/exhaustive-deps": [
+                "warn",
+                {
+                    additionalHooks: "(useMyCustomHook|useMyOtherCustomHook)",
+                },
+            ],
         },
     },
     eslintConfigPrettier,
