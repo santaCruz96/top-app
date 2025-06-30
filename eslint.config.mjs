@@ -17,8 +17,8 @@ const eslintConfig = [
             semi: ["error", "always"],
             "@typescript-eslint/no-explicit-any": "warn",
             "@typescript-eslint/no-empty-interface": [
-                "warn",
-                { allowInterfaces: "with-single-extends" },
+                "error",
+                { allowSingleExtends: true },
             ],
             // "no-page-custom-font": false,
             "react-hooks/exhaustive-deps": [
