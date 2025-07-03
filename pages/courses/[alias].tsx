@@ -10,10 +10,7 @@ import { ProductModel } from "@/interfaces/product.interface";
 const firstCategory = 0;
 
 function Course({ products }: CourseProps): JSX.Element {
-    if (!products) {
-        return <div>Курс не найден</div>;
-    }
-    return <>{products.length}</>;
+    return <>{products && products.length}</>;
 }
 
 export default withLayout(Course);

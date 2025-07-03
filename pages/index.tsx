@@ -5,7 +5,7 @@ import { GetStaticProps } from "next";
 import axios from "axios";
 import { MenuItem } from "@/interfaces/menu.interface";
 
-function Home({ menu }: HomeProps): JSX.Element {
+function Home(): JSX.Element {
     const [rating, setRating] = useState<number>(4);
 
     return (
@@ -29,11 +29,6 @@ function Home({ menu }: HomeProps): JSX.Element {
             </Tag>
             <Tag color="primary">primary</Tag>
             <Rating rating={rating} isEditable setRating={setRating} />
-            <ul>
-                {menu.map((m) => (
-                    <li key={m._id.secondCategory}>{m._id.secondCategory}</li>
-                ))}
-            </ul>
         </>
     );
 }
